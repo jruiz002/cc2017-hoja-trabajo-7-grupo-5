@@ -1,0 +1,582 @@
+{
+  "parametros": {
+    "g": 5,
+    "lam": 3.8,
+    "mu": 0.25,
+    "c": 18,
+    "a": 15.2,
+    "rho": 0.8444444444444444,
+    "k_off": 6,
+    "beta": 0.3
+  },
+  "teoria_con_espera": {
+    "a": 15.2,
+    "rho": 0.8444444444444444,
+    "p_esperar": 0.39198404998188524,
+    "Lq": 2.127913414187377,
+    "Wq": 0.559977214259836,
+    "W": 4.5599772142598365,
+    "L": 17.327913414187375,
+    "utilizacion": 0.8444444444444444,
+    "p_bloqueo": 0.0,
+    "lam_efectiva": 3.8,
+    "Wq_h": 13.439453142236065,
+    "W_h": 109.43945314223608
+  },
+  "teoria_sin_espera": {
+    "a": 15.2,
+    "p_bloqueo": 0.09114513376112421,
+    "lam_efectiva": 3.4536484917077277,
+    "L": 13.81459396683091,
+    "utilizacion": 0.7674774426017172,
+    "W": 4.0,
+    "Wq": 0.0,
+    "Lq": 0.0,
+    "p_esperar": 0.0,
+    "W_h": 96.0,
+    "Wq_h": 0.0
+  },
+  "little_teoria": [
+    {
+      "Verificación": "Con espera: L = λ·W",
+      "L (o Lq)": 17.327913414187375,
+      "λ·W (o λ·Wq)": 17.32791341418738,
+      "Error relativo": 2.050283605348401e-16
+    },
+    {
+      "Verificación": "Con espera: Lq = λ·Wq",
+      "L (o Lq)": 2.127913414187377,
+      "λ·W (o λ·Wq)": 2.127913414187377,
+      "Error relativo": 0.0
+    },
+    {
+      "Verificación": "Sin espera: L = λ_ef·W",
+      "L (o Lq)": 13.81459396683091,
+      "λ·W (o λ·Wq)": 13.81459396683091,
+      "Error relativo": 0.0
+    },
+    {
+      "Verificación": "Sin espera (ERROR): L vs λ·W con λ nominal",
+      "L (o Lq)": 13.81459396683091,
+      "λ·W (o λ·Wq)": 15.2,
+      "Error relativo": 0.1002856860285198
+    }
+  ],
+  "auditoria_original": {
+    "filas": [
+      {
+        "caso": "A: D/D/1 (gap 2, serv 0.5), H=101",
+        "medida": "L",
+        "esperado": 0.24752475247524752,
+        "original": 0.24752475247524752,
+        "corregido": 0.24752475247524752
+      },
+      {
+        "caso": "A: D/D/1 (gap 2, serv 0.5), H=101",
+        "medida": "utilizacion",
+        "esperado": 0.24752475247524752,
+        "original": 0.24752475247524752,
+        "corregido": 0.24752475247524752
+      },
+      {
+        "caso": "B: igual con calentamiento 11",
+        "medida": "L",
+        "esperado": 0.25,
+        "original": 0.25,
+        "corregido": 0.25
+      },
+      {
+        "caso": "C: D/D/1 (gap 1, serv 2), H=10.5",
+        "medida": "Wq (desde llegada, sin censura)",
+        "esperado": 4.5,
+        "original": 2.0,
+        "corregido": 4.5
+      },
+      {
+        "caso": "C: D/D/1 (gap 1, serv 2), H=10.5",
+        "medida": "p_esperar",
+        "esperado": 0.9,
+        "original": 0.9,
+        "corregido": 0.9
+      },
+      {
+        "caso": "C: D/D/1 (gap 1, serv 2), H=10.5",
+        "medida": "L",
+        "esperado": 3.0476190476190474,
+        "original": 3.0476190476190474,
+        "corregido": 3.0476190476190474
+      },
+      {
+        "caso": "C: D/D/1 (gap 1, serv 2), H=10.5",
+        "medida": "Lq",
+        "esperado": 2.142857142857143,
+        "original": 2.142857142857143,
+        "corregido": 2.142857142857143
+      },
+      {
+        "caso": "D: D/D/1/1 (gap 1, serv 1.5), H=10.2",
+        "medida": "p_bloqueo",
+        "esperado": 0.5,
+        "original": 0.5,
+        "corregido": 0.5
+      },
+      {
+        "caso": "D: D/D/1/1 (gap 1, serv 1.5), H=10.2",
+        "medida": "L (camas ocupadas)",
+        "esperado": 0.7058823529411765,
+        "original": 0.7058823529411764,
+        "corregido": 0.7058823529411764
+      },
+      {
+        "caso": "E: D/D/1/1 con empate (gap 2, serv 2), H=21",
+        "medida": "p_bloqueo",
+        "esperado": 0.0,
+        "original": 0.5,
+        "corregido": 0.0
+      },
+      {
+        "caso": "F: sobrecarga λ=5, c=18, H=30 (2000 réplicas c/u)",
+        "medida": "Wq (días), media; EE de la diferencia=0.034",
+        "esperado": null,
+        "original": 1.1712477993387993,
+        "corregido": 1.5472079528708638
+      },
+      {
+        "caso": "F: sobrecarga λ=5, c=18, H=30 (2000 réplicas c/u)",
+        "medida": "Lq (control), media; EE de la diferencia=0.161",
+        "esperado": null,
+        "original": 6.359875353748366,
+        "corregido": 6.636088724098737
+      },
+      {
+        "caso": "F: sobrecarga λ=5, c=18, H=30 (2000 réplicas c/u)",
+        "medida": "L (control), media; EE de la diferencia=0.180",
+        "esperado": null,
+        "original": 21.979373450257476,
+        "corregido": 22.284172109361062
+      }
+    ],
+    "autocorr_lag1_L_original": 0.026546772010416657,
+    "original_main": {
+      "con_espera": [
+        {
+          "medida": "L",
+          "teoria": 17.327913414187375,
+          "media": 17.220631095186878,
+          "ic_inf": 16.92125167517672,
+          "ic_sup": 17.520010515197036,
+          "contiene_teoria": true
+        },
+        {
+          "medida": "Lq",
+          "teoria": 2.127913414187377,
+          "media": 2.0923307914233638,
+          "ic_inf": 1.857105541536982,
+          "ic_sup": 2.3275560413097454,
+          "contiene_teoria": true
+        },
+        {
+          "medida": "Wq",
+          "teoria": 0.559977214259836,
+          "media": 0.5515821260866197,
+          "ic_inf": 0.4905473895940133,
+          "ic_sup": 0.6126168625792261,
+          "contiene_teoria": true
+        },
+        {
+          "medida": "utilizacion",
+          "teoria": 0.8444444444444444,
+          "media": 0.8404611279868621,
+          "ic_inf": 0.8352257412747041,
+          "ic_sup": 0.8456965146990202,
+          "contiene_teoria": true
+        },
+        {
+          "medida": "p_esperar",
+          "teoria": 0.39198404998188524,
+          "media": 0.3861591152563365,
+          "ic_inf": 0.3709080490283686,
+          "ic_sup": 0.4014101814843044,
+          "contiene_teoria": true
+        }
+      ],
+      "sin_espera": [
+        {
+          "medida": "L",
+          "teoria": 13.81459396683091,
+          "media": 13.818173003487587,
+          "ic_inf": 13.773187810371859,
+          "ic_sup": 13.863158196603315,
+          "contiene_teoria": true
+        },
+        {
+          "medida": "utilizacion",
+          "teoria": 0.7674774426017172,
+          "media": 0.7676762779715326,
+          "ic_inf": 0.7651771005762144,
+          "ic_sup": 0.7701754553668508,
+          "contiene_teoria": true
+        },
+        {
+          "medida": "p_bloqueo",
+          "teoria": 0.09114513376112421,
+          "media": 0.0924879736959156,
+          "ic_inf": 0.09035466121565093,
+          "ic_sup": 0.09462128617618028,
+          "contiene_teoria": true
+        }
+      ]
+    }
+  },
+  "pytest": "\u001b[32m\u001b[32m\u001b[1m23 passed\u001b[0m\u001b[32m in 1.45s\u001b[0m\u001b[0m",
+  "welch": {
+    "semillas_maestras": {
+      "con_espera": 5001,
+      "sin_espera": 5002
+    },
+    "replicas": 200,
+    "ventana_dias": 10,
+    "bloques_con_espera": [
+      {
+        "bloque (días)": "0–50",
+        "dif. media vs meseta": -0.8861776119402985,
+        "EE": 0.19967543545972719,
+        "|dif|/EE": 4.438090293380294,
+        "sesgado (>2 EE)": "SÍ"
+      },
+      {
+        "bloque (días)": "50–100",
+        "dif. media vs meseta": -0.38847761194029845,
+        "EE": 0.23876102469198426,
+        "|dif|/EE": 1.6270562267918618,
+        "sesgado (>2 EE)": "no"
+      },
+      {
+        "bloque (días)": "100–150",
+        "dif. media vs meseta": -0.24827761194029851,
+        "EE": 0.24825960183050533,
+        "|dif|/EE": 1.0000725454711938,
+        "sesgado (>2 EE)": "no"
+      },
+      {
+        "bloque (días)": "150–200",
+        "dif. media vs meseta": -0.04477761194029847,
+        "EE": 0.25641547859184527,
+        "|dif|/EE": 0.1746291299815569,
+        "sesgado (>2 EE)": "no"
+      }
+    ],
+    "bloques_sin_espera": [
+      {
+        "bloque (días)": "0–50",
+        "dif. media vs meseta": -1.1763651741293533,
+        "EE": 0.06221864653755013,
+        "|dif|/EE": 18.90695538385578,
+        "sesgado (>2 EE)": "SÍ"
+      },
+      {
+        "bloque (días)": "50–100",
+        "dif. media vs meseta": -0.07206517412935325,
+        "EE": 0.07145331060283405,
+        "|dif|/EE": 1.0085631235467896,
+        "sesgado (>2 EE)": "no"
+      },
+      {
+        "bloque (días)": "100–150",
+        "dif. media vs meseta": 0.025734825870646814,
+        "EE": 0.0701562885444757,
+        "|dif|/EE": 0.3668213698951902,
+        "sesgado (>2 EE)": "no"
+      },
+      {
+        "bloque (días)": "150–200",
+        "dif. media vs meseta": -0.05406517412935315,
+        "EE": 0.06538914543120806,
+        "|dif|/EE": 0.8268218489906987,
+        "sesgado (>2 EE)": "no"
+      }
+    ],
+    "ee_ma_rel": 0.12180339126200519,
+    "criterio_inicial_pm15pct": "fallo por ruido (t~353 d en con espera); reemplazado por criterio de bloques con 2 EE",
+    "calentamiento_elegido": 100.0
+  },
+  "horizonte": {
+    "piloto_semilla": 5003,
+    "piloto_H": 2000.0,
+    "semiancho_rel_piloto": 0.12175391083375843,
+    "H_requerido": 11366.251250519244,
+    "H_elegido": 11500.0
+  },
+  "semillas": {
+    "maestra_con_espera": 5004,
+    "maestra_sin_espera": 5005,
+    "n_replicas": 30,
+    "horizonte": 11500.0,
+    "calentamiento": 100.0,
+    "estados_con_espera": [
+      2586245558,
+      3264494469,
+      1183481016,
+      3068021181,
+      1211284958,
+      1889504703,
+      855398456,
+      2332825276,
+      1588052764,
+      1242855595,
+      2545923543,
+      1417178464,
+      2014484747,
+      2399418075,
+      477025499,
+      692677225,
+      611636742,
+      3358054146,
+      77351843,
+      3509619275,
+      2328811543,
+      2568596721,
+      833390033,
+      3921697560,
+      3085902014,
+      142409212,
+      196771541,
+      2638630052,
+      733026703,
+      3725813207
+    ],
+    "estados_sin_espera": [
+      134020293,
+      2335862476,
+      3254302471,
+      1160466303,
+      415035193,
+      3561645621,
+      390889601,
+      3900591751,
+      1387800662,
+      2209634670,
+      3422089575,
+      381103948,
+      1813280434,
+      2119368594,
+      365999148,
+      1396294448,
+      740577475,
+      3094639850,
+      4002648792,
+      1133828380,
+      2216405739,
+      3870619679,
+      3409760369,
+      3477232258,
+      1458573785,
+      1673497486,
+      2619813661,
+      1776557121,
+      2902602329,
+      1977686508
+    ]
+  },
+  "validacion_con_espera": [
+    {
+      "Medida": "L (pacientes en sistema)",
+      "Teoría": 17.327913414187375,
+      "Media simulada": 17.255043381310596,
+      "IC 95 % inf": 17.144049735226016,
+      "IC 95 % sup": 17.366037027395176,
+      "¿Teoría dentro?": "sí",
+      "Semiancho rel. (%)": 0.6432533586371714
+    },
+    {
+      "Medida": "Lq (pacientes en cola)",
+      "Teoría": 2.127913414187377,
+      "Media simulada": 2.0833783033354303,
+      "IC 95 % inf": 2.0011319584309484,
+      "IC 95 % sup": 2.165624648239912,
+      "¿Teoría dentro?": "sí",
+      "Semiancho rel. (%)": 3.9477393410888446
+    },
+    {
+      "Medida": "Wq (horas)",
+      "Teoría": 13.439453142236065,
+      "Media simulada": 13.16758706840658,
+      "IC 95 % inf": 12.658331217139597,
+      "IC 95 % sup": 13.676842919673561,
+      "¿Teoría dentro?": "sí",
+      "Semiancho rel. (%)": 3.867495605849127
+    },
+    {
+      "Medida": "W (horas)",
+      "Teoría": 109.43945314223608,
+      "Media simulada": 109.06971777681457,
+      "IC 95 % inf": 108.47289168758826,
+      "IC 95 % sup": 109.6665438660409,
+      "¿Teoría dentro?": "sí",
+      "Semiancho rel. (%)": 0.5471968768155997
+    },
+    {
+      "Medida": "Utilización ρ",
+      "Teoría": 0.8444444444444444,
+      "Media simulada": 0.8428702821097306,
+      "IC 95 % inf": 0.8408097695281302,
+      "IC 95 % sup": 0.8449307946913309,
+      "¿Teoría dentro?": "sí",
+      "Semiancho rel. (%)": 0.24446378349498982
+    },
+    {
+      "Medida": "P(esperar) = Erlang C",
+      "Teoría": 0.39198404998188524,
+      "Media simulada": 0.3893263064312157,
+      "IC 95 % inf": 0.383075360633257,
+      "IC 95 % sup": 0.3955772522291744,
+      "¿Teoría dentro?": "sí",
+      "Semiancho rel. (%)": 1.6055801251290684
+    },
+    {
+      "Medida": "Tasa de ingresos (pac/día)",
+      "Teoría": 3.8,
+      "Media simulada": 3.7965964912280703,
+      "IC 95 % inf": 3.790386979252909,
+      "IC 95 % sup": 3.802806003203232,
+      "¿Teoría dentro?": "sí",
+      "Semiancho rel. (%)": 0.1635546993078726
+    }
+  ],
+  "validacion_sin_espera": [
+    {
+      "Medida": "L = camas ocupadas",
+      "Teoría": 13.81459396683091,
+      "Media simulada": 13.806815125504862,
+      "IC 95 % inf": 13.786138977739276,
+      "IC 95 % sup": 13.827491273270448,
+      "¿Teoría dentro?": "sí",
+      "Semiancho rel. (%)": 0.14975320215153737
+    },
+    {
+      "Medida": "Utilización por cama",
+      "Teoría": 0.7674774426017172,
+      "Media simulada": 0.7670452847502702,
+      "IC 95 % inf": 0.7658966098744043,
+      "IC 95 % sup": 0.7681939596261361,
+      "¿Teoría dentro?": "sí",
+      "Semiancho rel. (%)": 0.14975320215153717
+    },
+    {
+      "Medida": "P(bloqueo) = Erlang B",
+      "Teoría": 0.09114513376112421,
+      "Media simulada": 0.09125690040233313,
+      "IC 95 % inf": 0.09026191212971452,
+      "IC 95 % sup": 0.09225188867495174,
+      "¿Teoría dentro?": "sí",
+      "Semiancho rel. (%)": 1.0903156563853318
+    },
+    {
+      "Medida": "Tasa efectiva de ingresos (pac/día)",
+      "Teoría": 3.4536484917077277,
+      "Media simulada": 3.449953216374269,
+      "IC 95 % inf": 3.4446746442817804,
+      "IC 95 % sup": 3.4552317884667576,
+      "¿Teoría dentro?": "sí",
+      "Semiancho rel. (%)": 0.15300416444591985
+    },
+    {
+      "Medida": "W (horas)",
+      "Teoría": 96.0,
+      "Media simulada": 96.04593439404165,
+      "IC 95 % inf": 95.91640009274116,
+      "IC 95 % sup": 96.17546869534213,
+      "¿Teoría dentro?": "sí",
+      "Semiancho rel. (%)": 0.1348670322359076
+    }
+  ],
+  "little_sim_con_espera": {
+    "L = λ_ef·W: error relativo por réplica (media)": 0.0002139188414072629,
+    "L = λ_ef·W: error relativo de las medias": 6.600326486233928e-05,
+    "Lq = λ_ef·Wq: error relativo por réplica (media)": 0.00015687287184210295,
+    "Lq = λ_ef·Wq: error relativo de las medias": 0.0001812844508220763,
+    "valores: L, λ_ef (pac/día), W (días)": [
+      17.255043381310596,
+      3.7965964912280703,
+      4.544571574033941
+    ]
+  },
+  "little_sim_sin_espera": {
+    "L = λ_ef·W: error relativo por réplica (media)": 0.00012889757962197612,
+    "L = λ_ef·W: error relativo de las medias": 2.8919081004382874e-05,
+    "ERROR (usar λ nominal): |L - λ·W|/L de las medias": 0.10143235840330628,
+    "valores: L, λ_ef (pac/día), W (días)": [
+      13.806815125504862,
+      3.449953216374269,
+      4.001913933085069
+    ]
+  },
+  "cobertura": {
+    "estudios": 300,
+    "EE_binomial": 0.012583057392117916,
+    "H": 2000.0,
+    "calentamiento": 100.0,
+    "tabla": [
+      {
+        "Variante": "con espera",
+        "Medida": "L (pacientes en sistema)",
+        "Cobertura": 0.9566666666666667,
+        "Dentro de 95 % ± 2 EE": "sí"
+      },
+      {
+        "Variante": "con espera",
+        "Medida": "Lq (pacientes en cola)",
+        "Cobertura": 0.9533333333333334,
+        "Dentro de 95 % ± 2 EE": "sí"
+      },
+      {
+        "Variante": "con espera",
+        "Medida": "Wq (horas)",
+        "Cobertura": 0.9533333333333334,
+        "Dentro de 95 % ± 2 EE": "sí"
+      },
+      {
+        "Variante": "con espera",
+        "Medida": "W (horas)",
+        "Cobertura": 0.9566666666666667,
+        "Dentro de 95 % ± 2 EE": "sí"
+      },
+      {
+        "Variante": "con espera",
+        "Medida": "Utilización ρ",
+        "Cobertura": 0.9333333333333333,
+        "Dentro de 95 % ± 2 EE": "sí"
+      },
+      {
+        "Variante": "con espera",
+        "Medida": "P(esperar) = Erlang C",
+        "Cobertura": 0.94,
+        "Dentro de 95 % ± 2 EE": "sí"
+      },
+      {
+        "Variante": "sin espera",
+        "Medida": "L = camas ocupadas",
+        "Cobertura": 0.9333333333333333,
+        "Dentro de 95 % ± 2 EE": "sí"
+      },
+      {
+        "Variante": "sin espera",
+        "Medida": "Utilización por cama",
+        "Cobertura": 0.9333333333333333,
+        "Dentro de 95 % ± 2 EE": "sí"
+      },
+      {
+        "Variante": "sin espera",
+        "Medida": "P(bloqueo) = Erlang B",
+        "Cobertura": 0.9533333333333334,
+        "Dentro de 95 % ± 2 EE": "sí"
+      },
+      {
+        "Variante": "sin espera",
+        "Medida": "W (horas)",
+        "Cobertura": 0.96,
+        "Dentro de 95 % ± 2 EE": "sí"
+      }
+    ]
+  }
+}

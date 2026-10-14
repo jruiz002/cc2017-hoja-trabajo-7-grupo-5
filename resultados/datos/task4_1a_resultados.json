@@ -1,0 +1,60 @@
+{
+  "sir_convergencia": [
+    {
+      "paso dt (días)": 1.0,
+      "día del pico": 69.0,
+      "pico λ_epi (pac/día)": 1.3208947251339906,
+      "dif. rel. del pico vs referencia": 0.0002827658030593706,
+      "máx |λ_epi − referencia| (pac/día)": 1.5872979796105469e-06
+    },
+    {
+      "paso dt (días)": 0.5,
+      "día del pico": 68.5,
+      "pico λ_epi (pac/día)": 1.3212153376766613,
+      "dif. rel. del pico vs referencia": 4.0110670664113804e-05,
+      "máx |λ_epi − referencia| (pac/día)": 1.0303232744757196e-07
+    },
+    {
+      "paso dt (días)": 0.1,
+      "día del pico": 68.60000000000001,
+      "pico λ_epi (pac/día)": 1.3212645497178181,
+      "dif. rel. del pico vs referencia": 2.8646095372572717e-06,
+      "máx |λ_epi − referencia| (pac/día)": 1.766554680315835e-10
+    },
+    {
+      "paso dt (días)": 0.05,
+      "día del pico": 68.65,
+      "pico λ_epi (pac/día)": 1.3212678623681968,
+      "dif. rel. del pico vs referencia": 3.5743495974324566e-07,
+      "máx |λ_epi − referencia| (pac/día)": 5.348604892319031e-11
+    },
+    {
+      "paso dt (días)": 0.01,
+      "día del pico": 68.64,
+      "pico λ_epi (pac/día)": 1.3212683346326834,
+      "dif. rel. del pico vs referencia": 2.276125182349002e-12,
+      "máx |λ_epi − referencia| (pac/día)": 5.0414228347506196e-11
+    }
+  ],
+  "sir_referencia_dop853": {
+    "dia": 68.64,
+    "valor": 1.3212683346356908
+  },
+  "sir": {
+    "R0": 1.4999999999999998,
+    "pico_lambda_epi": {
+      "dia": 68.60000000000001,
+      "valor": 1.3212645497178181
+    },
+    "pico_I": {
+      "dia": 73.3,
+      "valor": 31578.297735703673
+    },
+    "lambda_total_en_pico": 5.121264549717818,
+    "fraccion_final_recuperados": 0.5829929228547595,
+    "S_final": 208495.75767251162,
+    "I_final": 7.780900108940043,
+    "lambda_epi_dia0": 0.0059988,
+    "razon_pico_sobre_base": 0.3477011972941627
+  }
+}
