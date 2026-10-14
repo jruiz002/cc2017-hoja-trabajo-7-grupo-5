@@ -1,0 +1,2 @@
+c3ade4551b6455e25080c843b6c75cf69b1aa5bedf50d91464ab4ad29e173118  B_simulador_original_ia.py
+16c864b2d61ee32cfe1b8552a83aa9d9410b7385d3c731a47dd394289de08624  A_prompt_exacto.md
