@@ -1,0 +1,477 @@
+{
+  "3.1a_barrido_teoria": [
+    {
+      "c": 16,
+      "B(c,a)": 0.1507227070345221,
+      "Wq (h)": 93.62309546980448
+    },
+    {
+      "c": 17,
+      "B(c,a)": 0.11875936503377339,
+      "Wq (h)": 29.867102938396567
+    },
+    {
+      "c": 18,
+      "B(c,a)": 0.09114513376112421,
+      "Wq (h)": 13.439453142236065
+    },
+    {
+      "c": 19,
+      "B(c,a)": 0.06796067887560808,
+      "Wq (h)": 6.7496607093815975
+    },
+    {
+      "c": 20,
+      "B(c,a)": 0.04911340298672175,
+      "Wq (h)": 3.5419232238618825
+    },
+    {
+      "c": 21,
+      "B(c,a)": 0.03432841657015239,
+      "Wq (h)": 1.8874528350478972
+    },
+    {
+      "c": 22,
+      "B(c,a)": 0.02316831331382773,
+      "Wq (h)": 1.0061026591276876
+    },
+    {
+      "c": 23,
+      "B(c,a)": 0.015080334627126019,
+      "Wq (h)": 0.5316698443493985
+    },
+    {
+      "c": 24,
+      "B(c,a)": 0.009460522297252836,
+      "Wq (h)": 0.27694456090625524
+    },
+    {
+      "c": 25,
+      "B(c,a)": 0.005719101300025289,
+      "Wq (h)": 0.14166138413136947
+    },
+    {
+      "c": 26,
+      "B(c,a)": 0.0033323330352858552,
+      "Wq (h)": 0.07097630894002978
+    },
+    {
+      "c": 27,
+      "B(c,a)": 0.0018724673676433804,
+      "Wq (h)": 0.0347727458927746
+    },
+    {
+      "c": 28,
+      "B(c,a)": 0.0010154500982556458,
+      "Wq (h)": 0.016639663286590008
+    },
+    {
+      "c": 29,
+      "B(c,a)": 0.0005319527891897467,
+      "Wq (h)": 0.007771945770898314
+    },
+    {
+      "c": 30,
+      "B(c,a)": 0.0002694501235854453,
+      "Wq (h)": 0.003541826453366508
+    }
+  ],
+  "3.1a_c_min_teoria": {
+    "sin_espera_B<=2%": 23,
+    "con_espera_Wq<=6h": 20
+  },
+  "3.1a_verificacion_sim": [
+    {
+      "meta": "B <= 2 %",
+      "c": 22,
+      "teoría": 0.02316831331382773,
+      "media": 0.023230970875586853,
+      "ic_inf": 0.022720694170461308,
+      "ic_sup": 0.0237412475807124,
+      "teoría en IC": true,
+      "cumple (IC sup <= meta)": false,
+      "incumple (IC inf > meta)": true
+    },
+    {
+      "meta": "B <= 2 %",
+      "c": 23,
+      "teoría": 0.015080334627126019,
+      "media": 0.015047098048203377,
+      "ic_inf": 0.014651850449688818,
+      "ic_sup": 0.015442345646717936,
+      "teoría en IC": true,
+      "cumple (IC sup <= meta)": true,
+      "incumple (IC inf > meta)": false
+    },
+    {
+      "meta": "Wq <= 6 h",
+      "c": 19,
+      "teoría": 6.7496607093815975,
+      "media": 6.928987958800629,
+      "ic_inf": 6.637491063600265,
+      "ic_sup": 7.220484854000993,
+      "teoría en IC": true,
+      "cumple (IC sup <= meta)": false,
+      "incumple (IC inf > meta)": true
+    },
+    {
+      "meta": "Wq <= 6 h",
+      "c": 20,
+      "teoría": 3.5419232238618825,
+      "media": 3.4547174317517966,
+      "ic_inf": 3.3105990266824694,
+      "ic_sup": 3.5988358368211237,
+      "teoría en IC": true,
+      "cumple (IC sup <= meta)": true,
+      "incumple (IC inf > meta)": false
+    }
+  ],
+  "3.1a_recomendacion": {
+    "c_recomendado": 23,
+    "variante": "sin espera",
+    "B_con_REC": 0.015080334627126019,
+    "Wq_h_con_REC_si_hubiera_espera": 0.5316698443493985,
+    "P_esperar_con_REC": 0.04319817485338863,
+    "B_si_se_desviara_con_cW": 0.04911340298672175,
+    "P_esperar_con_cW": 0.17709616119309413,
+    "Lq_con_cW": 0.5608045104447981,
+    "desviados_por_anio_con_REC": 20.916424127823788,
+    "desviados_por_anio_con_18": 126.41830052667927
+  },
+  "3.1b_CS2_c_Wq_con_media_puntual": 20,
+  "3.1b_robustez": [
+    {
+      "escenario": "base",
+      "a": 15.2,
+      "c para B <= 2 %": 23,
+      "c para Wq <= 6 h": 20,
+      "B con 23 camas": 0.015080334627126019,
+      "Wq (h) con 23 camas": 0.5316698443493985,
+      "fuente": "teoría",
+      "sim. confirma c (B)": true,
+      "sim. confirma c (Wq)": true
+    },
+    {
+      "escenario": "(i) estancia +25 %",
+      "a": 18.999999999999996,
+      "c para B <= 2 %": 27,
+      "c para Wq <= 6 h": 24,
+      "B con 23 camas": 0.06581527189945881,
+      "Wq (h) con 23 camas": 8.649199631669312,
+      "fuente": "teoría",
+      "sim. confirma c (B)": true,
+      "sim. confirma c (Wq)": true
+    },
+    {
+      "escenario": "(ii) llegadas +15 %",
+      "a": 17.479999999999997,
+      "c para B <= 2 %": 25,
+      "c para Wq <= 6 h": 22,
+      "B con 23 camas": 0.04080264799351369,
+      "Wq (h) con 23 camas": 2.6183950289205162,
+      "fuente": "teoría",
+      "sim. confirma c (B)": false,
+      "sim. confirma c (Wq)": true
+    },
+    {
+      "escenario": "(iii) CS = 2",
+      "a": 15.2,
+      "c para B <= 2 %": 23,
+      "c para Wq <= 6 h": 21,
+      "B con 23 camas": 0.014949718692531005,
+      "Wq (h) con 23 camas": NaN,
+      "fuente": "simulación (IC sup)",
+      "sim. confirma c (B)": true,
+      "sim. confirma c (Wq)": true
+    }
+  ],
+  "3.1b_verificacion_sim": [
+    {
+      "escenario": "(i) estancia +25 %",
+      "meta": "B <= 2 %",
+      "c": 26,
+      "teoría": 0.02582240404844187,
+      "media": 0.025993644001478876,
+      "ic_inf": 0.025514629170160803,
+      "ic_sup": 0.02647265883279695,
+      "cumple (IC sup <= meta)": false
+    },
+    {
+      "escenario": "(i) estancia +25 %",
+      "meta": "B <= 2 %",
+      "c": 27,
+      "teoría": 0.017847017477390394,
+      "media": 0.018099016203004904,
+      "ic_inf": 0.017498913193751717,
+      "ic_sup": 0.01869911921225809,
+      "cumple (IC sup <= meta)": true
+    },
+    {
+      "escenario": "(i) estancia +25 %",
+      "meta": "Wq <= 6 h",
+      "c": 23,
+      "teoría": 8.649199631669312,
+      "media": 8.47005897653592,
+      "ic_inf": 8.12473974233981,
+      "ic_sup": 8.815378210732032,
+      "cumple (IC sup <= meta)": false
+    },
+    {
+      "escenario": "(i) estancia +25 %",
+      "meta": "Wq <= 6 h",
+      "c": 24,
+      "teoría": 4.801505672142897,
+      "media": 4.697795355341926,
+      "ic_inf": 4.466439251895186,
+      "ic_sup": 4.929151458788666,
+      "cumple (IC sup <= meta)": true
+    },
+    {
+      "escenario": "(ii) llegadas +15 %",
+      "meta": "B <= 2 %",
+      "c": 24,
+      "teoría": 0.028860261432675612,
+      "media": 0.028935719853001536,
+      "ic_inf": 0.028308683104791187,
+      "ic_sup": 0.029562756601211885,
+      "cumple (IC sup <= meta)": false
+    },
+    {
+      "escenario": "(ii) llegadas +15 %",
+      "meta": "B <= 2 %",
+      "c": 25,
+      "teoría": 0.019779953242236217,
+      "media": 0.01987988767644013,
+      "ic_inf": 0.019353342135014787,
+      "ic_sup": 0.02040643321786547,
+      "cumple (IC sup <= meta)": false
+    },
+    {
+      "escenario": "(ii) llegadas +15 %",
+      "meta": "Wq <= 6 h",
+      "c": 21,
+      "teoría": 8.858684180910359,
+      "media": 8.95063062130236,
+      "ic_inf": 8.609011586319662,
+      "ic_sup": 9.292249656285057,
+      "cumple (IC sup <= meta)": false
+    },
+    {
+      "escenario": "(ii) llegadas +15 %",
+      "meta": "Wq <= 6 h",
+      "c": 22,
+      "teoría": 4.756498870145678,
+      "media": 4.7130854017743555,
+      "ic_inf": 4.490753803763201,
+      "ic_sup": 4.93541699978551,
+      "cumple (IC sup <= meta)": true
+    },
+    {
+      "escenario": "(iii) CS = 2",
+      "meta": "B <= 2 %",
+      "c": 22,
+      "teoría": 0.02316831331382773,
+      "media": 0.023240072663141726,
+      "ic_inf": 0.022920296000985257,
+      "ic_sup": 0.023559849325298195,
+      "cumple (IC sup <= meta)": false
+    },
+    {
+      "escenario": "(iii) CS = 2",
+      "meta": "B <= 2 %",
+      "c": 23,
+      "teoría": 0.015080334627126019,
+      "media": 0.014949718692531005,
+      "ic_inf": 0.01455905510745395,
+      "ic_sup": 0.015340382277608061,
+      "cumple (IC sup <= meta)": true
+    },
+    {
+      "escenario": "(iii) CS = 2",
+      "meta": "Wq <= 6 h",
+      "c": 19,
+      "teoría": 16.874151773453995,
+      "media": 11.757371464921686,
+      "ic_inf": 11.25267239401082,
+      "ic_sup": 12.262070535832551,
+      "cumple (IC sup <= meta)": false
+    },
+    {
+      "escenario": "(iii) CS = 2",
+      "meta": "Wq <= 6 h",
+      "c": 20,
+      "teoría": 8.854808059654706,
+      "media": 5.785838893128892,
+      "ic_inf": 5.523972456393061,
+      "ic_sup": 6.047705329864723,
+      "cumple (IC sup <= meta)": false
+    },
+    {
+      "escenario": "(iii) CS = 2",
+      "meta": "Wq <= 6 h",
+      "c": 21,
+      "teoría": 4.718632087619743,
+      "media": 2.8440874246939254,
+      "ic_inf": 2.7031363834120192,
+      "ic_sup": 2.9850384659758316,
+      "cumple (IC sup <= meta)": true
+    },
+    {
+      "escenario": "(iii) CS = 2",
+      "meta": "Wq <= 6 h",
+      "c": 22,
+      "teoría": 2.515256647819219,
+      "media": 1.4305604892861237,
+      "ic_inf": 1.3640757891222484,
+      "ic_sup": 1.497045189449999,
+      "cumple (IC sup <= meta)": true
+    }
+  ],
+  "3.1b_sensibilidad_CS": [
+    {
+      "medida": "B (sin espera)",
+      "c": 22,
+      "exponencial (teoría)": 0.02316831331382773,
+      "CS = 2 (sim.)": 0.023240072663141726,
+      "razón CS2/exp": 1.0030973057184602
+    },
+    {
+      "medida": "B (sin espera)",
+      "c": 23,
+      "exponencial (teoría)": 0.015080334627126019,
+      "CS = 2 (sim.)": 0.014949718692531005,
+      "razón CS2/exp": 0.9913386580719459
+    },
+    {
+      "medida": "Wq h (con espera)",
+      "c": 19,
+      "exponencial (teoría)": 6.7496607093815975,
+      "CS = 2 (sim.)": 11.757371464921686,
+      "razón CS2/exp": 1.7419203677274755
+    },
+    {
+      "medida": "Wq h (con espera)",
+      "c": 20,
+      "exponencial (teoría)": 3.5419232238618825,
+      "CS = 2 (sim.)": 5.785838893128892,
+      "razón CS2/exp": 1.6335302962384344
+    },
+    {
+      "medida": "Wq h (con espera)",
+      "c": 21,
+      "exponencial (teoría)": 1.8874528350478972,
+      "CS = 2 (sim.)": 2.8440874246939254,
+      "razón CS2/exp": 1.5068389375789366
+    },
+    {
+      "medida": "Wq h (con espera)",
+      "c": 22,
+      "exponencial (teoría)": 1.0061026591276876,
+      "CS = 2 (sim.)": 1.4305604892861237,
+      "razón CS2/exp": 1.42188322067099
+    }
+  ],
+  "3.1c_cierre": [
+    {
+      "camas": 23,
+      "capacidad en el cierre": 17,
+      "B estacionario sin cierre": 0.015080334627126019,
+      "B cuasiestacionario en el cierre": 0.11875936503377339,
+      "desvío 7 d antes": 0.01448153826466302,
+      "desvío en el cierre": 0.15451637130674425,
+      "IC inf": 0.14843448075761118,
+      "IC sup": 0.16059826185587733,
+      "desvío 7 d después": 0.00971630826547166,
+      "comprobación Σb/Σn": 0.15637805932553855,
+      "desviados por cierre": 4.1595,
+      "llegadas por cierre": 26.599
+    },
+    {
+      "camas": 18,
+      "capacidad en el cierre": 12,
+      "B estacionario sin cierre": 0.09114513376112421,
+      "B cuasiestacionario en el cierre": 0.31636846852004114,
+      "desvío 7 d antes": 0.08726832859095368,
+      "desvío en el cierre": 0.41657907637948666,
+      "IC inf": 0.4091006455164703,
+      "IC sup": 0.424057507242503,
+      "desvío 7 d después": 0.04966475179183271,
+      "comprobación Σb/Σn": 0.4144660665595936,
+      "desviados por cierre": 11.0965,
+      "llegadas por cierre": 26.773
+    }
+  ],
+  "3.1c_contingencia": [
+    {
+      "camas temporales": 0,
+      "capacidad en el cierre": 17,
+      "desvío en el cierre": 0.15451637130674425,
+      "IC inf": 0.14843448075761118,
+      "IC sup": 0.16059826185587733,
+      "cumple (IC sup <= 2 %)": false,
+      "comprobación Σb/Σn": 0.15637805932553855,
+      "desviados por cierre": 4.1595
+    },
+    {
+      "camas temporales": 1,
+      "capacidad en el cierre": 18,
+      "desvío en el cierre": 0.11414706420435633,
+      "IC inf": 0.10904485602890664,
+      "IC sup": 0.11924927237980602,
+      "cumple (IC sup <= 2 %)": false,
+      "comprobación Σb/Σn": 0.11533171292370885,
+      "desviados por cierre": 3.0605
+    },
+    {
+      "camas temporales": 2,
+      "capacidad en el cierre": 19,
+      "desvío en el cierre": 0.08831021386206624,
+      "IC inf": 0.08352889985138603,
+      "IC sup": 0.09309152787274644,
+      "cumple (IC sup <= 2 %)": false,
+      "comprobación Σb/Σn": 0.0899861046780917,
+      "desviados por cierre": 2.4285
+    },
+    {
+      "camas temporales": 3,
+      "capacidad en el cierre": 20,
+      "desvío en el cierre": 0.057887115014369064,
+      "IC inf": 0.05408695300181709,
+      "IC sup": 0.06168727702692104,
+      "cumple (IC sup <= 2 %)": false,
+      "comprobación Σb/Σn": 0.0593847243184825,
+      "desviados por cierre": 1.5935
+    },
+    {
+      "camas temporales": 4,
+      "capacidad en el cierre": 21,
+      "desvío en el cierre": 0.03973977786312823,
+      "IC inf": 0.03657228534588789,
+      "IC sup": 0.042907270380368574,
+      "cumple (IC sup <= 2 %)": false,
+      "comprobación Σb/Σn": 0.04075129339431656,
+      "desviados por cierre": 1.087
+    },
+    {
+      "camas temporales": 5,
+      "capacidad en el cierre": 22,
+      "desvío en el cierre": 0.024916256557193456,
+      "IC inf": 0.022539197744726732,
+      "IC sup": 0.02729331536966018,
+      "cumple (IC sup <= 2 %)": false,
+      "comprobación Σb/Σn": 0.024993402947939836,
+      "desviados por cierre": 0.663
+    },
+    {
+      "camas temporales": 6,
+      "capacidad en el cierre": 23,
+      "desvío en el cierre": 0.01331634058817301,
+      "IC inf": 0.011670272472587501,
+      "IC sup": 0.014962408703758518,
+      "cumple (IC sup <= 2 %)": true,
+      "comprobación Σb/Σn": 0.013965210141357487,
+      "desviados por cierre": 0.3685
+    }
+  ],
+  "3.1c_camas_temporales_min": 6
+}

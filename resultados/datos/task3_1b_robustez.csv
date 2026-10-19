@@ -1,0 +1,5 @@
+escenario,a,c para B <= 2 %,c para Wq <= 6 h,B con 23 camas,Wq (h) con 23 camas,fuente,sim. confirma c (B),sim. confirma c (Wq)
+base,15.2,23,20,0.015080334627126019,0.5316698443493985,teoría,True,True
+(i) estancia +25 %,18.999999999999996,27,24,0.06581527189945881,8.649199631669312,teoría,True,True
+(ii) llegadas +15 %,17.479999999999997,25,22,0.04080264799351369,2.6183950289205162,teoría,False,True
+(iii) CS = 2,15.2,23,21,0.014949718692531005,,simulación (IC sup),True,True

@@ -1,0 +1,27 @@
+corrida,semilla_maestra
+3.1a sin espera c=22,8101
+3.1a sin espera c=23,8102
+3.1a con espera c=19,8103
+3.1a con espera c=20,8104
+3.1b (i) estancia +25 % sin espera c=26,8111
+3.1b (i) estancia +25 % sin espera c=27,8112
+3.1b (i) estancia +25 % con espera c=23,8113
+3.1b (i) estancia +25 % con espera c=24,8114
+3.1b (ii) llegadas +15 % sin espera c=24,8115
+3.1b (ii) llegadas +15 % sin espera c=25,8116
+3.1b (ii) llegadas +15 % con espera c=21,8117
+3.1b (ii) llegadas +15 % con espera c=22,8118
+3.1b (iii) CS=2 sin espera c=22,8131
+3.1b (iii) CS=2 sin espera c=23,8132
+3.1b (iii) CS=2 con espera c=19,8133
+3.1b (iii) CS=2 con espera c=20,8134
+3.1b (iii) CS=2 con espera c=21,8135
+3.1b (iii) CS=2 con espera c=22,8136
+3.1c cierre c=23,8301
+3.1c cierre c=18 (actual),8302
+3.1c contingencia c=23 extra=1,8311
+3.1c contingencia c=23 extra=2,8312
+3.1c contingencia c=23 extra=3,8313
+3.1c contingencia c=23 extra=4,8314
+3.1c contingencia c=23 extra=5,8315
+3.1c contingencia c=23 extra=6,8316
