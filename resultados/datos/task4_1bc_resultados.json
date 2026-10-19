@@ -1,0 +1,129 @@
+{
+  "4.1b_pico_p_bloqueo": {
+    "dia": 66.5,
+    "p": 0.10942805456840006,
+    "ic": [
+      0.0683293280979955,
+      0.15052678103880462
+    ],
+    "B_cuasi_max": 0.09474651454369894,
+    "dia_B_cuasi_max": 68.5
+  },
+  "4.1b_comprobacion_semanal_max_dif": 0.005788126337814434,
+  "4.1b_desviados": [
+    {
+      "ventana": "ola (λepi >= 10 % del pico)",
+      "días": "31.5-112.5",
+      "llegadas": 361.81,
+      "desviados": 18.94,
+      "desviados IC inf": 16.943032829284885,
+      "desviados IC sup": 20.936967170715118,
+      "fracción desviada": 0.05170322454882409,
+      "fracción IC inf": 0.04652063880021812,
+      "fracción IC sup": 0.05688581029743006,
+      "Σb/Σn": 0.05234791741521793,
+      "desviados sin epidemia (control)": 5.08,
+      "desviados sin epidemia (Erlang B)": 4.641726998229388
+    },
+    {
+      "ventana": "200 días completos",
+      "días": "0.0-200.0",
+      "llegadas": 817.27,
+      "desviados": 27.32,
+      "desviados IC inf": 24.817460437233688,
+      "desviados IC sup": 29.822539562766313,
+      "fracción desviada": 0.03316154604776337,
+      "fracción IC inf": 0.030236797328464862,
+      "fracción IC sup": 0.03608629476706188,
+      "Σb/Σn": 0.03342836516695829,
+      "desviados sin epidemia (control)": 12.53,
+      "desviados sin epidemia (Erlang B)": 11.461054316615774
+    },
+    {
+      "ventana": "λepi >= 50 % del pico",
+      "días": "50.3-88.7",
+      "llegadas": 185.75,
+      "desviados": 13.42,
+      "desviados IC inf": 11.763919206696638,
+      "desviados IC sup": 15.076080793303362,
+      "fracción desviada": 0.07065196315900768,
+      "fracción IC inf": 0.062475598142769775,
+      "fracción IC sup": 0.07882832817524558,
+      "Σb/Σn": 0.07224764468371467,
+      "desviados sin epidemia (control)": 2.44,
+      "desviados sin epidemia (Erlang B)": 2.200522428790229
+    }
+  ],
+  "4.1b_previo_30d": 0.016808918306915173,
+  "4.1c_barrido": [
+    {
+      "camas temporales k": 0,
+      "camas en la ola": 23,
+      "ola (λepi >= 10 % del pico): fracción": 0.05170322454882409,
+      "ola (λepi >= 10 % del pico): IC sup": 0.05688581029743006,
+      "200 días completos: fracción": 0.03316154604776337,
+      "200 días completos: IC sup": 0.03608629476706188,
+      "λepi >= 50 % del pico: fracción": 0.07065196315900768,
+      "λepi >= 50 % del pico: IC sup": 0.07882832817524558,
+      "desviados en la ola": 18.94,
+      "P(bloqueo) diaria máxima": 0.10942805456840006
+    },
+    {
+      "camas temporales k": 1,
+      "camas en la ola": 24,
+      "ola (λepi >= 10 % del pico): fracción": 0.037753274193452396,
+      "ola (λepi >= 10 % del pico): IC sup": 0.04215446193941582,
+      "200 días completos: fracción": 0.027111207601054912,
+      "200 días completos: IC sup": 0.029769917018626496,
+      "λepi >= 50 % del pico: fracción": 0.05400815288846669,
+      "λepi >= 50 % del pico: IC sup": 0.061192442246098225,
+      "desviados en la ola": 13.84,
+      "P(bloqueo) diaria máxima": 0.09142997684317238
+    },
+    {
+      "camas temporales k": 2,
+      "camas en la ola": 25,
+      "ola (λepi >= 10 % del pico): fracción": 0.026792281455813763,
+      "ola (λepi >= 10 % del pico): IC sup": 0.03051370405791875,
+      "200 días completos: fracción": 0.022490521750711187,
+      "200 días completos: IC sup": 0.024952236672443773,
+      "λepi >= 50 % del pico: fracción": 0.03935136383382639,
+      "λepi >= 50 % del pico: IC sup": 0.04550228563984137,
+      "desviados en la ola": 9.84,
+      "P(bloqueo) diaria máxima": 0.07795512563580957
+    },
+    {
+      "camas temporales k": 3,
+      "camas en la ola": 26,
+      "ola (λepi >= 10 % del pico): fracción": 0.018894525146716388,
+      "ola (λepi >= 10 % del pico): IC sup": 0.02205078148432307,
+      "200 días completos: fracción": 0.01867706753173683,
+      "200 días completos: IC sup": 0.021033315601536044,
+      "λepi >= 50 % del pico: fracción": 0.0286699894253199,
+      "λepi >= 50 % del pico: IC sup": 0.03402908553929431,
+      "desviados en la ola": 6.94,
+      "P(bloqueo) diaria máxima": 0.05854708362088957
+    },
+    {
+      "camas temporales k": 4,
+      "camas en la ola": 27,
+      "ola (λepi >= 10 % del pico): fracción": 0.013309354992070784,
+      "ola (λepi >= 10 % del pico): IC sup": 0.015925483675628307,
+      "200 días completos: fracción": 0.015819296242983467,
+      "200 días completos: IC sup": 0.01789606908520739,
+      "λepi >= 50 % del pico: fracción": 0.02085573181025938,
+      "λepi >= 50 % del pico: IC sup": 0.025408379645242587,
+      "desviados en la ola": 4.9,
+      "P(bloqueo) diaria máxima": 0.04141854358319961
+    }
+  ],
+  "4.1c_k_min": {
+    "criterio_IC_sup": 1,
+    "estimacion_puntual": 1,
+    "sensibilidad_ventana": {
+      "ola (λepi >= 10 % del pico)": 1,
+      "200 días completos": 0,
+      "λepi >= 50 % del pico": 2
+    }
+  }
+}
